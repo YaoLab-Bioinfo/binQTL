@@ -1,0 +1,13 @@
+Package: binQTL
+Type: Package
+Title: QTL mapping with binmap
+Version: 0.1.0
+Author: Wen Yao and Shizhong Xu
+Maintainer: Wen Yao <ywhzau@gmail.com>
+Description: This package provides methods for QTL mapping 
+         with binmap data.
+License: Artistic-2.0
+LazyData: TRUE
+Depends: R (>= 2.14.0), MASS
+VignetteBuilder: knitr
+Suggests: knitr

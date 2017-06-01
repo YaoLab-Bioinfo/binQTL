@@ -1,0 +1,14 @@
+
+export(
+    aovQTL, binQTLScan,
+    plotQTL, plotBinmap
+)
+
+importFrom("stats", "anova", "coef", "lm", "optim", "pchisq",
+             "predict")
+importFrom("utils", "read.csv", "head", "tail")
+importFrom("graphics", "abline", "axis", "plot", "rect")
+importFrom("stats", "model.matrix")
+
+import(MASS)
+
