@@ -17,10 +17,9 @@ With the development of next-generation sequening, genotyping of SNPs
 became much easier, which leads to the development of binmap. In binmap, 
 the distance between adjacent markers were zero. As a result, the concept
 of "interval mapping" doesn't make sense in binmap. The **binQTL** package 
-is designed to perform QTL analysis with binmap. Several algorithm including
-ANOVA and polygenic control were implemented in
-the **binQTL** package. In this vignette, we will rely on two simple, 
-illustrative example datasets to explain the usage of **binQTL**.
+is designed to perform QTL analysis with binmap. In this vignette, 
+we will rely on two simple, illustrative example datasets to explain 
+the usage of **binQTL**.
 
 To use the **binQTL** package, we need to load it into R first. 
 
@@ -91,8 +90,8 @@ Let's get a glimpse of the QTL mapping results of different algorithms.
 ```{r, fig.cap='QTL mapping of 210 RILs using different algorithms.', fig.width=8, fig.height=7.5}
 par(mar = c(3, 4, 2, 1))
 par(mfrow=c(2, 1))
-plotQTL(qtl.res.1[, c(1:4, 6)], main="ANOVA", cex.axis=0.6)
-plotQTL(qtl.res.2[, c(1:4, 23)], main="binQTL", cex.axis=0.6, ylab=expression(-log[10](p)))
+plotQTL(qtl.res.1[, c(1:4, 6)], main="ANOVA", cex.axis=0.6, ylab=expression(-log[10](p)))
+plotQTL(qtl.res.2[, c(1:4, 6)], main="binQTL", cex.axis=0.6, ylab=expression(-log[10](p)))
 ```
 
 # 3 Use of **binQTL** with example dataset of 278 IMF2s
@@ -144,8 +143,8 @@ Let's get a glimpse of the QTL mapping results of different algorithms.
 ```{r, fig.cap='QTL mapping of 278 IMF2s using different algorithms.', fig.width=8, fig.height=7.5}
 par(mar = c(3, 4, 2, 1))
 par(mfrow=c(2, 1))
-plotQTL(qtl.res.3[, c(1:4, 6)], main="ANOVA", cex.axis=0.6)
-plotQTL(qtl.res.4[, c(1:4, 26)], main="binQTL", cex.axis=0.6, ylab=expression(-log[10](p)))
+plotQTL(qtl.res.3[, c(1:4, 6)], main="ANOVA", cex.axis=0.6, ylab=expression(-log[10](p)))
+plotQTL(qtl.res.4[, c(1:4, 6)], main="binQTL", cex.axis=0.6, ylab=expression(-log[10](p)))
 ```
 
 

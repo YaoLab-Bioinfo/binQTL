@@ -19,7 +19,7 @@ aovQTL <- function(phenotype="", genotype="") {
   parr.df <- do.call(rbind, parr.lst)
   res.return <- data.frame(genotype.a[, 1:4], parr.df[, 2])
   res.return$LOD <- -log10(res.return[,5])
-  names(res.return) <- c(names(genotype.a)[1:4], "P", "-logp")
+  names(res.return) <- c(names(genotype.a)[1:4], "p", "-logp")
 
   return(res.return)
 }
