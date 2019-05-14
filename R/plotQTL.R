@@ -1,5 +1,7 @@
 
 plotQTL <- function(qtl.res="", y.bottom=0, y.top=2, cols=c("grey30", "grey70"), ylab="-logp", xlab="", ...) {
+  qtl.res$Start <- as.numeric(qtl.res$Start)
+  qtl.res$Stop <- as.numeric(qtl.res$Stop)
   chr.len <- tapply(qtl.res$Stop, qtl.res$Chr, max)
   x.brks <- cumsum(chr.len) - chr.len/2
   chr.cum.len <- c(0, cumsum(chr.len)[-length(chr.len)])

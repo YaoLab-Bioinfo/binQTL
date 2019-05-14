@@ -1,5 +1,7 @@
 
 plotBinmap <- function(genotype="", cols=c("red", "blue", "grey40"), ...) {
+  genotype$Start <- as.numeric(genotype$Start)
+  genotype$Stop <- as.numeric(genotype$Stop)
   chr.len <- tapply(genotype$Stop, genotype$Chr, max)
   x.brks <- cumsum(chr.len) - chr.len/2
   chr.cum.len <- c(0, cumsum(chr.len)[-length(chr.len)])
