@@ -16,14 +16,16 @@
 \description{
   The phenotype data frame should contain two columns. The first column is the ID 
   of each accession of a population. The second column contains the phenotypic 
-  value of specific trait for each accession. 
-  Each row of the genotype data frame represents a Bin. The first column is the 
+  value of specific trait for each accession.  
+  For RIL (recombinant Inbred lines) or F2 population, each row of the 
+  genotype data frame represents a Bin. The first column is the 
   ID of each Bin. The second column is the chromosome ID of each Bin. The 3rd 
   column is the start coordinate of each Bin. The 4th column is the end coordinate 
   of each Bin. Each of the rest columns gives the genotype of each accession 
   at different bins. The names of the rest columns can be any characters 
-  specified by the User.
-  The population type can be RIL or F2.
+  specified by the User.  
+  For MAGIC population with 8 parents, each bin should be represented as 8 lines.
+  The population type can be RIL, F2 or magic.
 }
 
 \author{Wen Yao, Shizhong Xu}

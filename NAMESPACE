@@ -8,7 +8,7 @@ importFrom("stats", "anova", "coef", "lm", "optim", "pchisq",
              "predict")
 importFrom("utils", "read.csv", "head", "tail")
 importFrom("graphics", "abline", "axis", "plot", "rect")
-importFrom("stats", "model.matrix")
+importFrom("stats", "model.matrix", "var")
 
 import(MASS)
 
