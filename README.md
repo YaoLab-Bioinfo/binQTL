@@ -1,7 +1,7 @@
 binQTL
 ========
 
-QTL mapping with binmap data.
+The **binQTL** package is designed to perform QTL analysis with binned genotype data.  
 
 Installation
 ------------
